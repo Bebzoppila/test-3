@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/dist/main.css"> -->
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="./src/images/logo.jpg" alt="Логотип" />
+                </div>
+                <div class="header__info">
+                    <strong class="header__info-text">Позвоните сейчас</strong>
+                    <a class="header__info-phone" href="tel:84952302155">8
+                            495 230 21 55</a>
+                </div>
+                <div aria-label="Открыть модальное окно" role="button" class="header__btn">
+                    <img class="header__btn-img" src="./src/images/btn-arrow.png" alt="Трелочка" />
+                    <strong class="header__btn-text">Записаться на
+                            консультацию юриста</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main-content">
+            <div class="main-result">
+                <div data-active="false" data-successful="false" class="main-result__item"></div>
+                <div data-active="false" data-successful="false" class="main-result__item"></div>
+                <div data-active="false" data-successful="false" class="main-result__item"></div>
+                <div data-active="false" data-successful="false" class="main-result__item"></div>
+                <div data-active="false" data-successful="false" class="main-result__linean"></div>
+            </div>
+            <div class="main-slider swiper">
+                <div class="main-slider__inner swiper-wrapper">
+                    <div class="main-slider__item swiper-slide">
+                        <span class="main__text">Списание долгов на
+                                основании ФЗ№ 127 «О
+                                нестостоятельности
+                                (банкротстве)»</span>
+                        <h1 class="main__title">Спишем ваши долги</h1>
+                        <h3 class="main__subtitle">Пройдите тест и получите:</h3>
+                        <ul class="main__list">
+                            <li class="main__list-item">
+                                <img src="./src/images/list-arrow.png" alt="Стрелочка" />
+                                <strong class="main__list-text">Варианты
+                                        списания вашего долга</strong>
+                            </li>
+                            <li class="main__list-item">
+                                <img src="./src/images/list-arrow.png" alt="Стрелочка" />
+                                <strong class="main__list-text">Консультацию
+                                        юриста по
+                                        списанию долгов</strong>
+                            </li>
+                            <li class="main__list-item">
+                                <img src="./src/images/list-arrow.png" alt="Стрелочка" />
+                                <strong class="main__list-text">Сроки и
+                                        стоимость списания</strong>
+                            </li>
+                            <li class="main__list-item">
+                                <img src="./src/images/list-arrow.png" alt="Стрелочка" />
+                                <strong class="main__list-text">Список
+                                        необходимых документов
+                                        для начала процедуры</strong>
+                            </li>
+                        </ul>
+                        <div id="first" aria-label="Следующее" role="button" class="main__btn">
+                            <strong>Получить варианты списания</strong>
+                            <img src="./src/images/next-arrow.png" alt="Стрелочка" />
+                        </div>
+                    </div>
+                    <div class="main-slider__item swiper-slide
+                            main-slider__item--next">
+                        <h2 class="main__question">Укажите общую сумму ваших долгов
+                        </h2>
+                        <div class="radio">
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="менее 500 000 рублей" type="radio" name="totalAmount" id="500000">
+                                <label class="radio__item-label" for="500000">менее 500 000 рублей</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="от 500 000 до 1 000 000 рублей" type="radio" name="totalAmount" id="1000000">
+                                <label class="radio__item-label" for="1000000">от 500 000 до 1 000 000
+                                        рублей</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="от 1 000 000 до 5 000 000 рублей" type="radio" name="totalAmount" id="5000000">
+                                <label class="radio__item-label" for="5000000">от 1 000 000 до 5 000 000
+                                        рублей</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="более 5 000 000" type="radio" name="totalAmount" id="6000000">
+                                <label class="radio__item-label" for="6000000">более 5 000 000</label>
+                            </div>
+                        </div>
+                        <div class="main-slider__menu">
+                            <div data-field="totalAmount" aria-label="Следующее" role="button" class="main__btn main__btn-next
+                                    main__btn--min
+                                    main-slider__btn">
+                                <strong>Далее</strong>
+                                <img src="./src/images/next-arrow.png" alt="Стрелочка" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-slider__item swiper-slide
+                            main-slider__item--next">
+                        <h2 class="main__question">Есть ли у вас в собственности имущество?</h2>
+                        <div class="radio">
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Да, есть квартира (две и более)" type="radio" name="ownership" id="2000000">
+                                <label class="radio__item-label" for="2000000">Да, есть квартира (две и более)</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Да, есть автомобиль" type="radio" name="ownership" id="10000000">
+                                <label class="radio__item-label" for="10000000">Да, есть автомобиль</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Да, есть другая собственность" type="radio" name="ownership" id="50000000">
+                                <label class="radio__item-label" for="50000000">Да, есть другая  собственность</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Нет, ничего нет" type="radio" name="ownership" id="60000000">
+                                <label class="radio__item-label" for="60000000">Нет, ничего нет</label>
+                            </div>
+                        </div>
+                        <div class="main-slider__menu">
+                            <div aria-label="Предыдущий" role="button" class="main__btn-pref main__btn
+                                    main-slider__btn">
+                                <img src="./src/images/arrow-prif.png" alt="Стрелочка" />
+                                <strong>Назад</strong>
+                            </div>
+                            <div data-field="ownership" aria-label="Следующее" role="button" class="main__btn main__btn-next
+                                    main__btn--min
+                                    main-slider__btn">
+                                <strong>Далее</strong>
+                                <img src="./src/images/next-arrow.png" alt="Стрелочка" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-slider__item swiper-slide
+                            main-slider__item--next">
+                        <h2 class="main__question">Совершали ли вы крупные сделки за последние 3 года?</h2>
+                        <div class="radio">
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Да. была продажа квартиры / авто / участка" type="radio" name="transactions" id="3000000">
+                                <label class="radio__item-label" for="3000000">Да. была продажа квартиры / авто / участка</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Да. была продажа коммерческой собственности" type="radio" name="transactions" id="40000000">
+                                <label class="radio__item-label" for="40000000">Да. была продажа коммерческой собственности</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Да, была продажа ИП / ООО" type="radio" name="transactions" id="80000000">
+                                <label class="radio__item-label" for="80000000">Да, была продажа ИП / ООО</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Да, была продажа (другое)" type="radio" name="transactions" id="600000000">
+                                <label class="radio__item-label" for="600000000">Да, была продажа (другое)</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="Нет,  ничего не было" type="radio" name="transactions" id="00000000">
+                                <label class="radio__item-label" for="00000000">Нет, ничего не было</label>
+                            </div>
+                        </div>
+                        <div class="main-slider__menu">
+                            <div aria-label="Предыдущий" role="button" class="main__btn-pref main__btn
+                                    main-slider__btn">
+                                <img src="./src/images/arrow-prif.png" alt="Стрелочка" />
+                                <strong>Назад</strong>
+                            </div>
+                            <div data-field="transactions" aria-label="Следующее" role="button" class="main__btn main__btn-next
+                                    main__btn--min
+                                    main-slider__btn">
+                                <strong>Далее</strong>
+                                <img src="./src/images/next-arrow.png" alt="Стрелочка" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-slider__item swiper-slide
+                            main-slider__item--next">
+                        <h2 class="main__question">Как вы бы хотели получить варианты списанию долгов и консультацию юриста?</h2>
+                        <div class="radio">
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="В офисе «ЮрКонсалт+»" type="radio" name="variants" id="0">
+                                <label class="radio__item-label" for="0">В
+                                        офисе «ЮрКонсалт+»</label>
+                            </div>
+                            <div class="radio__item">
+                                <input class="radio__item-input" value="По телефону" type="radio" name="variants" id="1">
+                                <label class="radio__item-label" for="1">По
+                                        телефону</label>
+                            </div>
+                        </div>
+                        <div data-field="variants" aria-label="Следующее" role="button" class="main__btn main__btn-next">
+                            <strong>Получить варианты списания</strong>
+                            <img src="./src/images/next-arrow.png" alt="Стрелочка" />
+                        </div>
+                    </div>
+                    <div class="main-slider__item swiper-slide
+                            main-slider__item--next">
+                        <h2 class="main__question">Укажите ваши контактные данные
+                        </h2>
+                        <form class="form main-form">
+                            <div class="form__item">
+                                <input name="firstName" required placeholder="Ваше имя" class="form__input" type="text" />
+                            </div>
+                            <div class="form__item">
+                                <input name="phone" required placeholder="Ваш телефон" class="form__input form__input--phone" type="text" />
+                            </div>
+                            <button data-field="result" type="submit" class="form__btn main__btn-next">
+                                    Получить консультацию юриста
+                                </button>
+                            <span class="form__hint main-form__hint">*отправляя
+                                    формы на данном сайте,
+                                    вы даете
+                                    согласие на обработку
+                                    персональных данных в соответствии с 152-ФЗ
+                                </span>
+                        </form>
+                    </div>
+                    <div class="main-slider__item swiper-slide
+                            main-slider__item--next">
+                        <div class="thank main-thank">
+                            <h2 class="thank__title">Благодарим за заявку!</h2>
+                            <h3 class="thank__subtitle">Ожидайте звонка нашего юриста <br> с номера</h3>
+                            <a class="thank__phone" href="tel:84952302155">8
+                                    495 230 21 55</a>
+                            <div class="thank__content">
+                                <h4 class="thank__content-text">Узнайте о нас больше</h4>
+                                <div class="thank__content-items">
+                                    <a class="thank__content-link" href="">
+                                        <img src="./src/images/social/telegram.png" alt="Телеграмм" />
+                                    </a>
+                                    <a class="thank__content-link" href="">
+                                        <img src="./src/images/social/vk.png" alt="Вк" />
+                                    </a>
+                                    <a class="thank__content-link" href="">
+                                        <img src="./src/images/social/OK.png" alt="Одноклассники" />
+                                    </a>
+                                    <a class="thank__content-link" href="">
+                                        <img src="./src/images/social/instagram.png" alt="Интсраграмм" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-img">
+            <img src="./src/images/main.png" alt="Главная картика" />
+        </div>
+    </main>
+
+    <div id="modal-header" class="modal">
+        <div class="modal-content">
+            <div aria-label="Закрыть модальное окно" role="button" class="modal__close" id="modal-header-close">
+                <img src="./src/images/btn-modal.png" alt="Кнопка закрытия" />
+            </div>
+            <div class="modal-inner">
+            </div>
+        </div>
+    </div>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="./src/images/advantages/book.png" alt="Преимущество" />
+                    <h3 class="advantages__item-title">Опытные юристы</h3>
+                    <p class="advantages__item-text">
+                        более 10 лет юридического стажа, более 5 лет в сфере банкротства
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="./src/images/advantages/column.png" alt="Преимущество" />
+                    <h3 class="advantages__item-title">Офис в центре Москвы</h3>
+                    <p class="advantages__item-text">
+                        5 минут от станции метро «Баррикадная», 7 минут от станций Пушкинская и Арбатская
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="./src/images/advantages/agreement.png" alt="Преимущество" />
+                    <h3 class="advantages__item-title">Гарантии в договоре</h3>
+                    <p class="advantages__item-text">
+                        работаем только по договору, в котором прописываем все варианты и гарантируемрезультат
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="./src/images/advantages/shield.png" alt="Преимущество" />
+                    <h3 class="advantages__item-title">На более 570 миллиардов
+                    </h3>
+                    <p class="advantages__item-text">
+                        сохранили имущество клиентов и избавили от выплат по кредитам и займам
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <div class="footer__info">
+                        <a class="footer__info-phone" href="tel:74952302155">+7 495 230 21
+                                55</a>
+                        <a class="footer__info-mail" href="mailto:info@lordpartners.ru">info@lordpartners.ru</a>
+                        <span class="footer__info-text">*отправляя формы на
+                                данном сайте,
+                                вы даете согласие на
+                                обработку персональных данных в соответствии с
+                                152-ФЗ</span>
+                        <div class="footer__logs">
+                            <h2 class="footer__logs-title">При информационном содействии</h2>
+                            <div class="footer__logs-items">
+                                <img class="footer__logs-item" src="./src/images/inform/fns.png" alt="Логотип" />
+                                <img class="footer__logs-item" src="./src/images/inform/fns2.png" alt="Логотип" />
+
+                                <img class="footer__logs-item" src="./src/images/inform/emblem.png" alt="Логотип" />
+                                <img class="footer__logs-item" src="./src/images/inform/court.png" alt="Логотип" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer__special">
+                        <h2 class="footer__special-title">
+                            Специализируемся на случаях:
+                        </h2>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">Полное списание долгов
+                            </li>
+                            <li class="footer__list-item">Банкротство ИП</li>
+                            <li class="footer__list-item">Частичное списание долгов
+                            </li>
+                            <li class="footer__list-item">Списание долгов по распискам
+                            </li>
+                            <li class="footer__list-item">
+                                Реструктуризация долгов
+                            </li>
+                            <li class="footer__list-item">
+                                Списание долгов перед государством
+                            </li>
+                        </ul>
+                        <div class="footer__special-info">
+                            <div class="footer-social">
+                                <h2 class="footer-social__title">Больше о нас здесь</h2>
+                                <div class="footer-social__items">
+                                    <a class="footer-social-link" href="">
+                                        <img src="./src/images/social/telegram.png" alt="Телеграмм" />
+                                    </a>
+                                    <a class="footer-social-link" href="">
+                                        <img src="./src/images/social/vk.png" alt="Вк" />
+                                    </a>
+                                    <a class="footer-social-link" href="">
+                                        <img src="./src/images/social/OK.png" alt="Одноклассники" />
+                                    </a>
+                                    <a class="footer-social-link" href="">
+                                        <img src="./src/images/social/instagram.png" alt="Интсраграмм" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__special-adress">
+                                г. Москва <br> Гранатный переулок 4, строение 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__data">
+                    <strong class="footer__data-item">ИНН 9702007211</strong>
+                    <strong class="footer__data-item">ОГРН 1197746584760</strong>
+                    <strong class="footer__data-item">ООО «ЮрКонсалт+»</strong>
+                    <strong class="footer__data-item">Политика персональных
+                            данных</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="/dist/bundle.js"></script> -->
+    <script src="bundle.js"></script>
+</body>
+
+</html>

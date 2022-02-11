@@ -1,0 +1,619 @@
+@import "./fonts/OpenSants.css"
+@import "./fonts/Inter.css"
+@import "./fonts/stylesheet.css"
+*
+    padding: 0px
+    margin: 0px
+    box-sizing: border-box
+    font-display: swap
+.container
+    max-width: 1130px
+    margin: 0 auto
+.header
+    &__inner
+        display: flex
+        padding: 24px 0px 16px
+        align-items: center
+        justify-content: space-between
+    &__info
+        display: flex
+        flex-direction: column
+        text-align: center
+        &-text
+            font-size: 18px
+            font-weight: 400
+            color: #444444 
+            font-family: 'Open Sans'
+            line-height: 25px
+        &-phone
+            font-size: 24px
+            font-weight: 400
+            font-family: 'Open Sans'
+            color: #004DAE
+            text-decoration: none
+            line-height: 33px
+    &__btn
+        display: flex
+        align-items: center
+        gap: 13px
+        background: #004DAE12
+        padding: 12px 20px
+        cursor: pointer
+        max-width: 283px
+        border: 1px solid #EDEDED
+        border-radius: 10px
+        &-text
+            font-size: 14px
+            line-height: 19px
+            font-weight: 400
+            color: #004DAE
+            font-family: 'Open Sans'
+
+.modal
+    position: fixed
+    top: 0 
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, .4)
+    z-index: 1
+    align-items: center
+    justify-content: center
+    display: none
+    &--open
+        display: flex
+    &-content
+        max-width: 700px
+        width: 100%
+        background-color: #EDF3F9
+        height: 600px
+        padding: 80px 0px 0px 80px
+        position: relative
+    &__subtitle
+        font-size: 20px
+        font-weight: 800
+        font-family: 'Open Sans'
+        color: #222222
+        margin-bottom: 20px
+    &__close
+        position: absolute
+        top: 46px
+        right: 46px
+        cursor: pointer
+.form
+    &__item + &__item
+        margin-top: 16px
+    &__input
+        border-radius: 6px
+        width: 100%
+        max-width: 350px
+        padding: 16px 24px
+        font-size: 16px
+        color: #333333
+        border: 0.5px solid #B6B5B5
+        outline: none
+        font-family: 'Open Sans'
+        &--sucsess
+            border: 0.5px solid #61CE7F
+    &__btn
+        margin-top: 28px
+        width: 100%
+        max-width: 350px
+        padding: 16px 0px
+        background-color: #FF4B4B
+        color: #fff
+        font-size: 16px
+        font-weight: 800
+        font-family: 'Open Sans'
+        border: none
+        border-radius: 6px
+        cursor: pointer
+    &__hint
+        display: inline-block
+        width: 100%
+        max-width: 350px
+        margin-top: 12px
+        font-size: 12px
+        line-height: 17px
+        color: #22222280
+
+.main
+    margin-top: 40px
+    display: flex
+    align-items: stretch
+    justify-content: center
+    gap: 40px
+    &__question
+        font-size: 20px
+        font-weight: 600
+        margin-top: 13px
+        font-family: 'Open Sans'
+        color: #fff
+        margin-bottom: 20px
+        max-width: 410px
+    &__btn
+        background-color: #FF4B4B
+        max-width: 335px
+        padding: 17px 0px
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+        margin-top: 40px
+        cursor: pointer
+        color: #fff
+        border-radius: 10px
+        font-family: 'Open Sans'
+        &-pref
+            color: #A7A7A7
+            background-color: transparent
+        &--min
+            max-width: 132px
+    &__title
+        font-size: 52px
+        font-weight: 800
+        font-family: 'Open Sans'
+        color: #fff
+        line-height: 70px
+        margin: 0px
+        margin-bottom: 20px
+    &__subtitle
+        font-size: 20px
+        font-weight: 600
+        font-family: 'Open Sans'
+        color: #fff
+        margin-bottom: 20px
+    &__text
+        color: #fff
+        color: #9C9C9C
+        font-size: 14px
+        font-family: 'Open Sans'
+    &-content
+        border-top-right-radius: 10px
+        border-bottom-right-radius: 10px
+        padding: 48px 30px 0px
+        background-color: #2A394C
+        flex: 1 1 50%
+        display: flex
+        justify-content: flex-end
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+    &-slider
+        max-width: 600px
+        &__btn
+            align-self: flex-end
+            width: 132px
+        &__menu
+            right: 0px
+            bottom: 40px
+            position: absolute
+            display: flex
+            align-items: center
+            gap: 20px
+    &-img
+        flex: 1 1 50%
+    &__list
+        list-style-type: none
+        padding: 0px
+        &-item
+            font-size: 16px
+            color: #fff
+            display: flex
+            align-items: center
+            gap: 12px
+            font-family: 'Open Sans'
+        &-item + &-item
+            margin-top: 12px
+    &-slider
+        &__item
+            max-height: 540px
+
+.advantages
+    margin-top: 60px
+    &-img
+        width: 80px
+        height: 80px
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__item
+        flex: 0 1 25%
+        &-title
+            margin: 12px 0px
+            font-size: 18px
+            font-family: 'Open Sans'
+            font-weight: 600
+        &-text
+            width: 100%
+            max-width: 260px
+            font-size: 14px
+            font-family: 'Open Sans'
+            line-height: 19px
+.footer
+    margin-top: 60px
+    background-color: #F2F8FF
+    padding: 60px 0px
+    &__content
+        display: flex
+        margin-bottom: 40px
+    &__info
+        display: flex
+        flex-direction: column
+        flex: 0 1 50%
+        &-phone
+            font-size: 24px
+            font-family: 'Open Sans'
+            color: #212121
+            font-weight: 700
+            text-decoration: none
+        &-mail
+            font-size: 24px
+            font-weight: 800
+            font-family: 'Inter'
+            color: #212121
+            margin: 8px 0px 15px
+            text-decoration: none
+        &-text
+            font-family: 'Rubik'
+            color: #373737B2
+            margin-bottom: 24px
+            max-width: 285px
+            width: 100%
+            font-size: 12px
+    &__logs
+        &-title
+            font-size: 14px
+            font-family: 'Rubik'
+            font-weight: 500
+            margin-bottom: 12px
+            color: #232323
+        &-items
+            display: flex
+            gap: 22px
+            align-items: flex-start
+        &-item
+            height: 60px
+            display: block
+    &__special
+        flex: 0 1 50%
+        &-info
+            display: flex
+        &-adress
+            flex: 1 1 50%
+            color: #272727
+            font-family: 'Open Sans'
+            font-size: 12px
+        &-title
+            font-size: 16px
+            font-weight: bold
+            color: #14203A
+            font-family: 'Inter'
+            margin-bottom: 8px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        list-style-type: none
+        margin-bottom: 37px
+        &-item
+            flex: 1 1 50%
+            font-family: 'Inter'
+            font-size: 14px
+            margin-top: 12px
+            font-weight: 500
+            color: #2A394C
+    &-social
+        flex: 1 1 50%
+        &__title
+            font-size: 18px
+            font-weight: 600
+            font-family: 'Open Sans'
+            color: #000
+            margin-bottom: 12px
+        &__items
+            display: flex
+            gap: 10px
+    &__data
+        display: flex
+        gap: 12px
+        color: #272727B2
+        font-family: 'Open Sans'
+        font-size: 12px
+        font-weight: 400
+
+
+.main-result__item[data-active = 'false'].main-result__item:after
+    position: absolute
+    content: "✔"
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: #fff
+    font-size: 12px
+.main-result__item[data-active = 'false']
+    background-color: #808080
+
+.main-result__item[data-successful = 'true'].main-result__item:after
+    position: absolute
+    content: "✔"
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: #fff
+    font-size: 12px
+.main-result__item[data-successful = 'true']
+    background-color: #8BC073
+
+
+.main-result__item[data-active = 'true'].main-result__item:after
+    position: absolute
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+    width: 8px
+    height: 8px
+    border-radius: 50%
+.main-result__item[data-active = 'true']
+    background-color: #FFD176
+
+
+
+.main-result
+    display: inline-flex
+    gap: 60px
+    position: relative
+    z-index: 1
+    max-width: 600px
+    margin: 0 auto
+    display: none
+    transition: all 0.3s
+    &__linean
+        position: absolute
+        left: 0
+        right: 0
+        top: 50%
+        background-color: #9C9C9C
+        z-index: -1
+        // width: 100%
+        height: 3px
+        transform: translateY(-50%)
+    &__item
+        position: relative
+        z-index: 2
+        width: 16px
+        height: 16px
+        border: .5px solid #fff
+        border-radius: 50%
+        background-color: #808080
+
+.radio
+    &__item + &__item
+        margin-top: 13px
+    &__item
+        gap: 10px
+        display: flex
+        align-items: center
+        position: relative
+        &-input
+            display: none
+        &-input:checked  ~ &-label::after
+            background-color: #fff
+        &-label
+            font-size: 16px
+            font-family: 'Open Sans'
+            font-weight: 600
+            color: #fff
+            padding-left: 28px
+            position: relative
+            &::after
+                position: absolute
+                content: ""
+                width: 18px
+                height: 18px
+                border: 1px solid #fff
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+                border-radius: 50%
+                // background-color: #fff
+            &::before
+                position: absolute
+                content: "✔"
+                top: 50%
+                color: #2A394C
+                left: 4px
+                transform: translateY(-50%)
+                font-size: 15px
+                z-index: 3
+.main-form__hint
+    color: #FFFFFF80
+
+
+    
+.thank
+    &__title
+        font-size: 24px
+        color: #222222
+        font-family: 'Open Sans'
+        margin-bottom: 20px
+        font-weight: 600
+    &__subtitle
+        font-size: 18px
+        font-weight: 400
+        font-family: 'Open Sans'
+        color: #222222
+        margin-bottom: 13px
+        line-height: 25px
+    &__phone
+        font-size: 24px
+        font-weight: 600
+        font-family: 'Open Sans'
+        color: #004DAE
+        text-decoration: none
+    &__content
+        margin-top: 40px
+        &-text
+            font-size: 18px
+            font-family: 'Open Sans'
+            color: #222222
+            font-weight: 400
+            margin-bottom: 12px
+        &-items
+            gap: 14px
+            display: flex
+.main-thank 
+    margin-top: 20px
+    & .thank__title
+        color: #fff
+    & .thank__subtitle
+        color: #fff
+    & .thank__phone
+        color: #fff
+    & .thank__content-text
+        color: #fff
+.leaves
+    display: flex
+    flex-direction: column
+    &__title
+        font-size: 52px
+        font-weight: bold
+        font-family: 'Rubik'
+        color: #E94343
+        margin-bottom: 12px
+    &__subtitle
+        font-size: 24px
+        color: #20293A
+        font-family: 'Rubik'
+        margin-bottom: 44px
+    &__help
+        font-size: 18px
+        font-weight: 400
+        color: #3D3D4B
+        font-family: 'Rubik'
+        margin-bottom: 16px
+    &__btn
+        margin-top: 20px
+        background-color: #FF4B4B
+        max-width: 350px
+        padding: 12px 0px
+        color: #fff
+        outline: none
+        border: none
+        border-radius: 10px
+        cursor: pointer
+        width: 100%
+.select
+    width: 100%
+    max-width: 445px
+    display: inline-block
+    padding: 14px 24px
+    outline: none
+    border: 1px solid #808080
+    border-radius: 10px
+
+@media screen and (max-width: 1177px)
+    .container
+        max-width: 900px
+@media screen and (max-width: 996px)
+    .main-img
+        display: none
+    .main-content
+        padding-bottom: 30px
+        // 996
+@media screen and (max-width: 877px)
+    .container
+        // max-width: 700px
+        padding: 0px 10px
+    .advantages__item
+        flex: 1 1 50%
+        display: flex
+        flex-direction: column
+        align-items: center
+    .advantages__item-text
+        text-align: center
+    .advantages__inner
+        flex-wrap: wrap
+    .advantages
+        margin-top: 30px
+    .header__btn
+        max-width: 230px
+@media screen and (max-width: 669px)
+    .header__info
+        display: none
+    .footer__content
+        flex-direction: column
+    .footer__info
+        align-items: center
+    .footer
+        margin-top: 30px
+    .footer__special
+        margin-top: 20px
+    .main-content
+        max-width: 100%
+    .main__title
+        font-size: 40px
+        line-height: 49px
+    .main__list-text
+        font-size: 14px
+    .footer__data
+        flex-wrap: wrap
+    // .main-slider__item
+    //     max-width: 100vw !important
+    .main-slider__menu
+        right: 20px
+    .main__question
+        max-width: 100%
+        font-size: 16px
+    .main__text
+        font-size: 12px
+    .main-content
+        padding: 27px 12px 20px
+    .main-slider
+        max-width: 100%
+    .modal-content
+        max-width: 100%
+        padding: 0px
+        display: flex
+        align-items: center
+        justify-content: center
+    .modal-inner
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+    .header-form, .leaves-form
+        display: flex
+        flex-direction: column
+        justify-content: center
+    .leaves
+        justify-content: center
+        align-items: center
+
+@media screen and (max-width: 504px)
+    .header__inner
+        // flex-direction: column
+    .main
+        margin-top: 20px
+    .advantages__item
+        flex: 1 1 100%
+    .advantages__item + .advantages__item
+        margin-top: 20px
+    .footer__special-title
+        text-align: center
+    .footer__list-item
+        flex: 1 1 100%
+        text-align: center
+    .footer__special-info
+        flex-direction: column
+        align-items: center
+    .header__inner
+        flex-direction: column
+    .header__btn
+        max-width: 250px
+        margin-top: 10px
+    .main__title
+        font-size: 30px
+        line-height: 39px
+        
